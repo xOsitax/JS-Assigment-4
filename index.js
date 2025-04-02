@@ -14,6 +14,8 @@ function guessNum() {
   while (guessNum !== randomNum) {
     if (guessNum > randomNum) {
       guessNum = parseInt(prompt("Too high! Guess again"));
+    } else {
+      guessNum = parseInt(prompt("Too low! Guess again"));
     }
   }
 }
